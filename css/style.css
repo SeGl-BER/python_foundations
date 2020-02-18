@@ -1,0 +1,47 @@
+body {
+    color: orange;
+    font-family: Verdana, Geneva, sans-serif;
+  }
+form {
+    font-size: small;
+    color: black;
+  }
+.hbtn {
+      position: relative;
+      transition-duration: 0.3s;
+      overflow: visible;
+      box-sizing: border-box;
+      border: medium none;
+      padding: 10px 22px;
+      background: transparent;
+} 
+ 
+
+.hbtn::after {
+      box-sizing: border-box;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: "";
+      border: 2px solid orange;
+      z-index: 2;
+      margin: 0px;
+      left: 0px;
+      bottom: 0px;
+      border-top-width: 2px;
+      transition: border-top-width 0.1s ease 0.2s, height 0.2s ease 0.1s, width 0.2s ease 0s, margin 0.2s ease 0s;
+} 
+ 
+
+.hbtn:hover::after {
+      width: 60%;
+      height: 0px;
+      border-width: 0px 2px 2px;
+      margin: 0px 20%;
+      transition: border-top-width 0.1s ease 0s, height 0.2s ease 0.1s, width 0.2s ease 0.2s, margin 0.2s ease 0.2s;
+} 
+.col-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
